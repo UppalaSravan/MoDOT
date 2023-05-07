@@ -25,7 +25,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Scanning...");
   pinMode(Buzzer, OUTPUT);
-  BLEDevice::init("test-DEVICE1");
+  BLEDevice::init("test-DEVICE2");
   BLEServer *pServer = BLEDevice::createServer();
   BLEService *pService = pServer->createService(SERVICE_UUID);
   BLECharacteristic *pCharacteristic = pService->createCharacteristic(
